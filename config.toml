@@ -5,10 +5,10 @@ theme = "aafu"
 publishDir = "docs/"
 
 [params]
-    title = "Aafu theme"
-    author = "Darshan Baral"
+    title = "Rong Huang"
+    author = "Rong Huang"
     description = "Website title"
-    copyright = "abc"
+    copyright = ""
 
     [params.theme]
         allowToggle = true
@@ -101,12 +101,12 @@ publishDir = "docs/"
             company = "Social Cognition in Preschoolers Lab (SCIP)"
             details = "Coding data, setting interviews with children at school, arranging works for undergraduate RAs, communicating with the preschool teachers and parents."
         [[params.experience.list]]
-            position = "Teaching assistant"
+            position = "Teaching Assistant"
             dates = "2017 - 2019"
             company = "Human Development (EPSY 224)"
             details = "Designing quizzes, leading discussion, grading quizzes and exams."
         [[params.experience.list]]
-            position = "Teaching assistant"
+            position = "Teaching Assistant"
             dates = "2018"
             company = "Statistics (EPSY 530)"
             details = "Holding review session for students, designing exams, grading exams."
@@ -190,7 +190,7 @@ publishDir = "docs/"
             skillrating = 30
         [[params.skill.list]]
             skill = "using R"
-            skillrating = 20
+            skillrating = 30
 
     # Hobby section
     [params.hobby]
