@@ -88,7 +88,7 @@ publishDir = "docs/"
     [params.aboutme]
         title = "About Me"
         icon = "fas fa-user"
-        description = "**Rong Huang is a forever student.** She is currently a third year PhD student in the division of Educational Psychology and Methodology in the university at Albany, SUNY. Her passion is working with children and conducting research on child development, espcially for the underrepresented population, such as bilingual or multilingual children, children lived in poverty, etc. In addition, she is also eager to explore more on the topics of how children think, how their langauges develops, and their relations to the environments. She considers herself as a ‘forever student’ as she thinks knowledge is infinite, and learning is the life."
+        description = "Rong Huang is currently a third year PhD student in the division of Educational Psychology and Methodology in the university at Albany, SUNY. Her passion is working with children and conducting research on child development, espcially for the underrepresented population, such as bilingual or multilingual children, children lived in poverty, etc. In addition, she is also eager to explore more on the topics of how children think, how their langauges develops, and their relations to the environments. She considers herself as a ‘forever student’ as she thinks knowledge is infinite, and learning is the life."
 
     # Experience section
     [params.experience]
