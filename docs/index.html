@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <title>Aafu theme</title>
+
+<meta name="theme-color" content="" />
+<meta charset="utf-8" />
+<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<meta name="description" content="Website title" />
+<meta name="author" content="Darshan Baral" />
+<meta name="generator" content="aafu theme by Darshan in Hugo 0.58.3" />        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">        <link rel="manifest" href="site.webmanifest">        <link rel="mask-icon" href="safari-pinned-tab.svg" color="#252627">        <link rel="shortcut icon" href="favicon.ico">        
+
+
+  <link
+    rel="stylesheet"
+    href="/css/bootstrap/bootstrap.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="//fonts.googleapis.com/css?family=Didact+Gothic%7CRoboto:400%7CRoboto+Mono"
+  />
+
+  <link
+    id="color-CSS"
+    rel="stylesheet"
+    href="/css/aafu_pinkish.css"
+    type="text/css"
+  />
+  <link rel="stylesheet" href="/css/aafu.css" />
+
+  <script>
+    var themeColor = document.querySelector("meta[name=theme-color]");
+    window.onload = function() {
+      themeColor.content = getComputedStyle(document.body)["background-color"];
+      let defaultActivePanel = document.querySelector(".accordion.active")
+        .nextElementSibling;
+      defaultActivePanel.style.maxHeight =
+        defaultActivePanel.scrollHeight + "px";
+    };
+    window.onresize = function() {
+      document.querySelector(".active").nextElementSibling.style.maxHeight =
+        document.querySelector(".active").nextElementSibling.scrollHeight +
+        "px";
+    };
+  </script>
+</head>
+<body class="container" style="max-width: 1400px;">
+<div class="ml-auto mr-auto row row-eq-height rounded">
+  <div class="col-md-5 text-center p-2 mt-3">
+    <div class="profile-area rounded text-center position-relative">
+      
+<div class="toggleSwitchContainer" style="width: 45px; height: 45px;">
+  <i
+    class="fas fa-toggle-on zoomlink"
+    id="toggle"
+    title="Toggle Theme"
+    onclick="toggleTheme(this)"
+  ></i>
+</div>
+
+<script>
+  const mainTheme =
+    "\/css\/aafu_pinkish.css";
+  const altTheme =
+    "\/css\/aafu_dark.css";
+  const currentCSS = document.querySelector("#color-CSS");
+  function toggleTheme(elem) {
+    
+    
+    elem.classList.toggle("fa-toggle-off");
+    elem.classList.toggle("fa-toggle-on");
+    if (currentCSS.href.includes(mainTheme)) {
+      currentCSS.setAttribute("href", "." + altTheme);
+    } else {
+      currentCSS.setAttribute("href", "." + mainTheme);
+    }
+  }
+
+  function changeThemeColor() {
+    themeColor.content = getComputedStyle(document.body)["background-color"];
+  }
+  const thisBody = document.body;
+  thisBody.addEventListener("webkitTransitionEnd", changeThemeColor);
+  thisBody.addEventListener("transitionend", changeThemeColor);
+</script>
+
+
+      <div class="d-flex justify-content-center pt-2">
+  <div class="w-100 h-100">
+    <img
+      class="rounded rounded-circle mt-4"
+      src="/images/66.JPG"
+      alt="Darshan Baral"
+      style="width: 95%; max-width: 300px;"
+    />
+  </div>
+</div>
+
+      <div class="p-2">
+        <h1 class="mb-0">Rong Huang</h1>
+<h2 class="mb-0">Ph.D. Student</h2>
+<h3 class="mb-0">University at Albany, SUNY</h3>
+<div class="mt-2 d-flex flex-wrap justify-content-center">
+  
+  <div style="height:45px; width:45px;">
+    <a href="rhuang5@albany.edu">
+      <i class="zoomlink mt-1 fas fa-envelope"></i>
+    </a>
+  </div>
+  
+  <div style="height:45px; width:45px;">
+    <a href="https://github.com/Ronghuang66">
+      <i class="zoomlink mt-1 fab fa-github"></i>
+    </a>
+  </div>
+  
+  <div style="height:45px; width:45px;">
+    <a href="#">
+      <i class="zoomlink mt-1 fab fa-linkedin-in"></i>
+    </a>
+  </div>
+  
+  <div style="height:45px; width:45px;">
+    <a href="#">
+      <i class="zoomlink mt-1 ai ai-google-scholar"></i>
+    </a>
+  </div>
+  
+  <div style="height:45px; width:45px;">
+    <a href="https://www.researchgate.net/profile/Rong_Huang65">
+      <i class="zoomlink mt-1 ai ai-researchgate"></i>
+    </a>
+  </div>
+  
+</div>
+
+        <footer class="mb-4">
+  <span class="markdownify">abc</span>
+  <span >
+    &middot;
+    <i>
+      <a href="https://github.com/darshanbaral/aafu">
+        aafu
+      </a>
+    </i>
+    by
+    <a href="https://www.darshanbaral.com/">
+      darshan
+    </a>
+  </span>
+</footer>
+
+      </div>
+    </div>
+  </div>
+  <div class="col-md-7 pt-2 mt-3">
+    
+    <h2 class="accordion  active ">
+      
+      <span onclick="expandAccordion(this)" style="cursor: pointer;">
+        <i class="fas fa-user"></i>
+        About Me</span>
+    </h2>
+    <div
+      class="panel overflow-hidden"
+      
+    >
+      <p class="markdownify">
+  <strong>Rong Huang is a forever student.</strong> She is currently a third year PhD student in the division of Educational Psychology and Methodology in the university at Albany, SUNY. Her passion is working with children and conducting research on child development, espcially for the underrepresented population, such as bilingual or multilingual children, children lived in poverty, etc. In addition, she is also eager to explore more on the topics of how children think, how their langauges develops, and their relations to the environments. She considers herself as a ‘forever student’ as she thinks knowledge is infinite, and learning is the life.
+</p>
+
+    </div>
+    
+    <h2 class="accordion ">
+      
+      <span onclick="expandAccordion(this)" style="cursor: pointer;">
+        <i class="fas fa-briefcase"></i>
+        Experiences</span>
+    </h2>
+    <div
+      class="panel overflow-hidden"
+      
+    >
+      
+<dl>
+  <dt class="mb-0">
+    Lab Manager
+  </dt>
+  <dd class="mb-0 ml-3">
+    <span class="markdownify">2019 - <em>Present</em></span>
+    &middot;
+    
+    Social Cognition in Preschoolers Lab (SCIP)
+    
+  </dd>
+  <dd class="mb-0 ml-4 markdownify">Coding data, setting interviews with children at school, arranging works for undergraduate RAs, communicating with the preschool teachers and parents.</dd>
+</dl>
+
+<dl>
+  <dt class="mb-0">
+    Teaching assistant
+  </dt>
+  <dd class="mb-0 ml-3">
+    <span class="markdownify">2017 - 2019</span>
+    &middot;
+    
+    Human Development (EPSY 224)
+    
+  </dd>
+  <dd class="mb-0 ml-4 markdownify">Designing quizzes, leading discussion, grading quizzes and exams.</dd>
+</dl>
+
+<dl>
+  <dt class="mb-0">
+    Teaching assistant
+  </dt>
+  <dd class="mb-0 ml-3">
+    <span class="markdownify">2018</span>
+    &middot;
+    
+    Statistics (EPSY 530)
+    
+  </dd>
+  <dd class="mb-0 ml-4 markdownify">Holding review session for students, designing exams, grading exams.</dd>
+</dl>
+
+
+    </div>
+    
+    <h2 class="accordion ">
+      
+      <span onclick="expandAccordion(this)" style="cursor: pointer;">
+        <i class="fas fa-graduation-cap"></i>
+        Education</span>
+    </h2>
+    <div
+      class="panel overflow-hidden"
+      
+    >
+      
+<dl>
+  <dt>Ph.D. Educational Psychology</dt>
+  <dd class="mb-0 ml-3">2017-present &middot; University at Albany SUNY</dd>
+  
+</dl>
+
+<dl>
+  <dt>M.S. Curriculum and Teaching Methodology</dt>
+  <dd class="mb-0 ml-3">2014 - 2017 &middot; Guangxi Normal University</dd>
+  
+</dl>
+
+<dl>
+  <dt>B.S. in English Education</dt>
+  <dd class="mb-0 ml-3">2010 - 2014 &middot; Hunan First Normal University</dd>
+  
+</dl>
+
+
+    </div>
+    
+    <h2 class="accordion ">
+      
+      <span onclick="expandAccordion(this)" style="cursor: pointer;">
+        <i class="fas fa-book"></i>
+        Publications</span>
+    </h2>
+    <div
+      class="panel overflow-hidden"
+      
+    >
+      
+
+
+<h4 style="text-decoration: underline;">Book Chapters</h4><p>E Baker, Q Liu, R Huang.
+(2019).
+
+
+<a href="#">
+  <em>A view from the start: A review of Inhibitory Control Training in early childhood (Eds). Inhibitory Control Training- A Multidisciplinary Approach.</em>
+</a>
+
+
+London: IntechOpen. ISBN 978-1-78985-982-9.
+</p>
+
+
+<h4 style="text-decoration: underline;">Proceedings</h4>
+
+<h4 style="text-decoration: underline;">Journal Articles</h4><p>E Baker, R Huang, C Batistta.
+(2019).
+
+
+<a href="#">
+  <em>Relations of Executive Functions and Theory of Mind: Taking a deeper look at low-income, at-risk Preschoolers’ cognition.</em>
+</a>
+
+
+(Under review).
+</p>
+<p>E Baker, R Huang, QY Liu, C Batistta.
+(2019).
+
+
+<a href="#">
+  <em>Children’s Poverty Exposure and Hot and Cool Executive Functions: Moderation and Mediation by Parental Financial Strain.</em>
+</a>
+
+
+(Under review).
+</p>
+
+
+
+
+    </div>
+    
+    <h2 class="accordion ">
+      
+      <span onclick="expandAccordion(this)" style="cursor: pointer;">
+        <i class="fas fa-project-diagram"></i>
+        Conferences</span>
+    </h2>
+    <div
+      class="panel overflow-hidden"
+      
+    >
+      <dl>
+  
+  <dt>
+    <a href="#" style="font-variant: small-caps; ">Cognitive Development Society Conference</a>
+  </dt>
+  <dd class="mb-0 ml-3 markdownify">Relations of Executive Functions and Theory of Mind: Taking a deeper look at low-income, at-risk Preschoolers’ cognition. Poster was presented at the 2019 Cognitive Development Society Conference, Louisville, KY.</dd>
+  
+</dl>
+
+    </div>
+    
+    <h2 class="accordion ">
+      
+      <span onclick="expandAccordion(this)" style="cursor: pointer;">
+        <i class="fas fa-cogs"></i>
+        Skills</span>
+    </h2>
+    <div
+      class="panel overflow-hidden"
+      
+      id="skill-panel"
+      
+    >
+      <script>
+  let skillPanel = document.querySelector("#skill-panel")
+    .previousElementSibling;
+  skillPanel.addEventListener("click", function() {
+    let skillBars = document.querySelectorAll("#skill-percent");
+    skillBars.forEach(elem => {
+      elem.style.width = elem.classList[0];
+    });
+  });
+</script>
+
+<code>using SPSS</code>
+<div class="w-100 skillbar mt-1 mb-3">
+  <div id="skill-percent" class="90%" style="width: 0;"></div>
+</div>
+
+<code>using SAS</code>
+<div class="w-100 skillbar mt-1 mb-3">
+  <div id="skill-percent" class="30%" style="width: 0;"></div>
+</div>
+
+<code>using R</code>
+<div class="w-100 skillbar mt-1 mb-3">
+  <div id="skill-percent" class="20%" style="width: 0;"></div>
+</div>
+
+
+    </div>
+    
+    <h2 class="accordion ">
+      
+      <span onclick="expandAccordion(this)" style="cursor: pointer;">
+        <i class="fas fa-gamepad"></i>
+        Hobbies</span>
+    </h2>
+    <div
+      class="panel overflow-hidden"
+      
+    >
+      <ul class="pl-0">
+  
+  <li class="list-unstyled mb-2">Hiking</li>
+  
+  <li class="list-unstyled mb-2">Photograghing</li>
+  
+  <li class="list-unstyled mb-2">Cooking</li>
+  
+</ul>
+
+    </div>
+    
+    <script src="/js/accordion.js"></script>
+  </div>
+</div>
+
+  </body>
+</html>

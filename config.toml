@@ -1,0 +1,205 @@
+baseURL = "/"
+languageCode = "en-us"
+theme = "aafu"
+
+publishDir = "docs/"
+
+[params]
+    title = "Aafu theme"
+    author = "Darshan Baral"
+    description = "Website title"
+    copyright = "abc"
+
+    [params.theme]
+        allowToggle = true
+        # Available themes are 'light', 'dark', and 'pinkish'
+        mainTheme = "pinkish"
+        altTheme = "dark"
+        # setting false below will hide 'aafu by darshan' displayed under the profile pic
+        showAttribute = true
+
+    [params.favicons]
+        use = true
+        metas = '''
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="mask-icon" href="safari-pinned-tab.svg" color="#252627">
+        <link rel="shortcut icon" href="favicon.ico">
+        '''
+
+    # Profile section
+    [params.profile]
+        name = "Rong Huang"
+		tagline = "Ph.D. Student"
+		location = "University at Albany, SUNY"
+        photo = "66.JPG"
+
+    # Section for links to social websites
+    [params.social]
+        title = "Links"
+
+        	
+        [[params.social.list]]
+            class = "fas"
+            icon = "fa-envelope"
+            url = "rhuang5@albany.edu"
+            title = "Email"
+            
+        [[params.social.list]]
+            class = "fab"
+            icon = "fa-github"
+            url = "https://github.com/Ronghuang66"
+            title = "GitHub"
+        [[params.social.list]]
+            class = "fab"
+            icon = "fa-linkedin-in"
+            url = "#"
+            title = "LinkedIn"	
+	     	[[params.social.list]]
+            class = "ai"
+            icon = "ai-google-scholar"
+            url = "#"
+            title = "Google Scholar"
+	    	[[params.social.list]]
+            class = "ai"
+            icon = "ai-researchgate"
+            url = "https://www.researchgate.net/profile/Rong_Huang65"
+            title = "ResearchGate"
+
+    #Specify what is showin in the Accordion
+    [[params.showInAccordion]]
+        item = "aboutme"
+        expand = true   # true for the section that is initially expanded
+    [[params.showInAccordion]]
+        item = "experience"
+    [[params.showInAccordion]]
+        item = "education"
+    [[params.showInAccordion]]
+        item = "publication"
+    [[params.showInAccordion]]
+        item = "project"
+    [[params.showInAccordion]]
+        item = "skill"
+    [[params.showInAccordion]]
+        item = "hobby"
+
+    [params.aboutme]
+        title = "About Me"
+        icon = "fas fa-user"
+        description = "**Rong Huang is a forever student.** She is currently a third year PhD student in the division of Educational Psychology and Methodology in the university at Albany, SUNY. Her passion is working with children and conducting research on child development, espcially for the underrepresented population, such as bilingual or multilingual children, children lived in poverty, etc. In addition, she is also eager to explore more on the topics of how children think, how their langauges develops, and their relations to the environments. She considers herself as a ‘forever student’ as she thinks knowledge is infinite, and learning is the life."
+
+    # Experience section
+    [params.experience]
+        title = "Experiences"
+        icon = "fas fa-briefcase"
+
+        [[params.experience.list]]
+            position = "Lab Manager"
+            dates = "2019 - *Present*"
+            company = "Social Cognition in Preschoolers Lab (SCIP)"
+            details = "Coding data, setting interviews with children at school, arranging works for undergraduate RAs, communicating with the preschool teachers and parents."
+        [[params.experience.list]]
+            position = "Teaching assistant"
+            dates = "2017 - 2019"
+            company = "Human Development (EPSY 224)"
+            details = "Designing quizzes, leading discussion, grading quizzes and exams."
+        [[params.experience.list]]
+            position = "Teaching assistant"
+            dates = "2018"
+            company = "Statistics (EPSY 530)"
+            details = "Holding review session for students, designing exams, grading exams."
+          
+ 
+    # Education section
+    [params.education]
+        title = "Education"
+        icon = "fas fa-graduation-cap"
+
+        [[params.education.list]]
+            degree = "Ph.D. Educational Psychology"
+            college = "University at Albany SUNY"
+            dates = "2017-present"
+            
+        [[params.education.list]]
+            degree = "M.S. Curriculum and Teaching Methodology"
+            college = "Guangxi Normal University"
+            dates = "2014 - 2017"
+         
+        [[params.education.list]]
+            degree = "B.S. in English Education"
+            college = "Hunan First Normal University"
+            dates = "2010 - 2014"
+
+    # Publication section
+    [params.publication]
+        title = "Publications"
+        icon = "fas fa-book"
+        #The order below determines the order in which the items appear in "Publications" section
+        format = ["authors","date", "title", "journal"]
+        #If you don't want to group publications, comment the line below by adding # at the beginning
+        types = ["Book Chapters", "Proceedings", "Journal Articles"]
+
+        [[params.publication.list]]
+            title = "A view from the start: A review of Inhibitory Control Training in early childhood (Eds). Inhibitory Control Training- A Multidisciplinary Approach."
+            authors = "E Baker, Q Liu, R Huang"
+            date = "(2019)"
+            journal = "London: IntechOpen. ISBN 978-1-78985-982-9"
+            link = "#"
+            type = "Book Chapters"
+
+        [[params.publication.list]]
+            title = "Relations of Executive Functions and Theory of Mind: Taking a deeper look at low-income, at-risk Preschoolers’ cognition"
+            authors = "E Baker, R Huang, C Batistta"
+            date = "(2019)"
+            journal = "(Under review)"
+            link = "#"
+            type = "Journal Articles"
+		
+        [[params.publication.list]]
+            title = "Children’s Poverty Exposure and Hot and Cool Executive Functions: Moderation and Mediation by Parental Financial Strain."
+            authors = "E Baker, R Huang, QY Liu, C Batistta"
+            date = "(2019)"
+            journal = "(Under review)"
+            link = "#"
+            type = "Journal Articles"
+
+    # Conference section
+    [params.project]
+        title = "Conferences"
+        icon = "fas fa-project-diagram"
+
+        [[params.project.list]]
+            title = "Cognitive Development Society Conference"
+            url = "#"
+            description = "Relations of Executive Functions and Theory of Mind: Taking a deeper look at low-income, at-risk Preschoolers’ cognition. Poster was presented at the 2019 Cognitive Development Society Conference, Louisville, KY."
+       
+
+    # Skill section
+    [params.skill]
+        title = "Skills"
+        panelId = "skill-panel"
+        icon = "fas fa-cogs"
+
+        [[params.skill.list]]
+            skill = "using SPSS"
+            skillrating = 90
+        [[params.skill.list]]
+            skill = "using SAS"
+            skillrating = 30
+        [[params.skill.list]]
+            skill = "using R"
+            skillrating = 20
+
+    # Hobby section
+    [params.hobby]
+        title = "Hobbies"
+        icon = "fas fa-gamepad"
+		
+        [[params.hobby.list]]		
+		    hobby = "Hiking"
+        [[params.hobby.list]]		
+		    hobby = "Photograghing"
+        [[params.hobby.list]]		
+		    hobby = "Cooking"
